@@ -6,7 +6,8 @@ pipeline {
         stage('Build') {
             steps {
                 sh 'hostname'
-                sh 'who -a'
+                sh 'pwd'
+                sh 'rsync -a Demo\ Pipeline/ /home/ubuntu/jenkins_rsync_test'
             }
         }
         
