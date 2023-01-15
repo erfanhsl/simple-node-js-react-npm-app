@@ -7,7 +7,7 @@ pipeline {
             steps {
                 sh 'hostname'
                 sh 'pwd'
-                sh 'rsync -a Demo Pipeline/ /home/ubuntu/jenkins_rsync_test'
+                sh 'rsync -a DemoPipeline/ /home/ubuntu/jenkins_rsync_test'
             }
         }
         
